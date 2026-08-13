@@ -1,0 +1,4 @@
+interface:
+  display_name: "GitHub Create Pull Request"
+  short_description: "Create a pull request for one issue"
+  default_prompt: "Use $github-create-pull-request to create a pull request for completed GitHub issue #123 without merging it."

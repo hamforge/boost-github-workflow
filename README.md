@@ -10,13 +10,13 @@
 
 hamforge's opinionated GitHub workflow for AI-assisted Laravel development, distributed as Laravel Boost skills.
 
-It gives coding agents a consistent way to capture ideas, plan work, investigate and implement issues, and review releases without turning the package into a runtime GitHub integration.
+It gives coding agents a consistent way to capture ideas, plan work, investigate and implement issues, create pull requests, and review releases without turning the package into a runtime GitHub integration.
 
 Built and maintained independently by [hamforge](https://hamforge.dev) in Australia.
 
 ## What You Get
 
-After installation, supported AI coding assistants gain access to the bundled GitHub workflow for capturing ideas, planning work, selecting and implementing issues, and reviewing release readiness.
+After installation, supported AI coding assistants gain access to the bundled GitHub workflow for capturing ideas, planning work, selecting and implementing issues, creating pull requests, and reviewing release readiness.
 
 ## Installation
 
@@ -71,6 +71,7 @@ Explicit project-specific workflow instructions may override these hamforge defa
 | `$github-next-issue` | Recommend exactly one next issue |
 | `$github-investigate-issue` | Investigate an issue before implementation |
 | `$github-implement-issue` | Implement one selected issue |
+| `$github-create-pull-request` | Create a pull request for completed issue work |
 | `$github-release-review` | Review release readiness without changing state |
 
 ## Changelog

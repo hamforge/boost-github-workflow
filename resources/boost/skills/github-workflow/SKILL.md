@@ -2,8 +2,9 @@
 name: github-workflow
 description: >
   Explain and route hamforge's GitHub-native idea, roadmap, issue,
-  implementation, and release workflows without changing state. Use when the
-  appropriate focused GitHub skill is unclear or when returning to a project.
+  implementation, pull-request, and release workflows without changing state.
+  Use when the appropriate focused GitHub skill is unclear or when returning
+  to a project.
 license: MIT
 metadata:
   author: hamforge
@@ -21,6 +22,7 @@ Do not change files or GitHub state. Inspect repository guidance and live GitHub
 Milestone (planned release)
     -> Issue (planned work)
     -> Implementation
+    -> Pull request creation
     -> Pull request (reviewed change)
     -> Merge
     -> Changelog (shipped outcome)
@@ -56,6 +58,10 @@ Use `$github-investigate-issue` for a numbered issue with unresolved behavior, a
 
 Use `$github-implement-issue` for one understood, unblocked numbered issue. It implements only that scope and does not create a pull request or close the issue by default.
 
+### I have completed issue work to submit for review
+
+Use `$github-create-pull-request` for one numbered issue. It reviews the completed diff and commits, prepares and pushes a safe working branch, runs required checks, and creates one linked pull request without merging it.
+
 ### I want to review release readiness
 
 Use `$github-release-review` for a read-only assessment of scope, work, checks, release notes, compatibility, and risks.
@@ -70,6 +76,7 @@ Use `$github-release-review` for a read-only assessment of scope, work, checks, 
 | Recommend what to work on next | `$github-next-issue` |
 | Investigate a numbered issue | `$github-investigate-issue` |
 | Implement an understood numbered issue | `$github-implement-issue` |
+| Create a pull request for completed issue work | `$github-create-pull-request` |
 | Assess release readiness | `$github-release-review` |
 
 ## Quick Reference
@@ -83,6 +90,7 @@ Use `$github-release-review` for a read-only assessment of scope, work, checks, 
 | `$github-next-issue` | No | No | Not applicable | Recommend exactly one next issue |
 | `$github-investigate-issue` | No | No | Not applicable | Investigate without implementation |
 | `$github-implement-issue` | No by default | Yes | No; invocation authorizes scoped implementation | Implement one issue |
+| `$github-create-pull-request` | Pushes one branch and creates one pull request | No | No; invocation authorizes PR preparation and creation | Submit completed issue work for review |
 | `$github-release-review` | No | No | Not applicable | Assess release readiness |
 
 Do not imply every issue needs investigation. Use it for unclear behavior, meaningful risk, architecture choices, permissions, external integrations, infrastructure, or substantial data changes.

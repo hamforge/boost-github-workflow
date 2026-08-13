@@ -27,6 +27,7 @@ function expectedGitHubSkills(): array
         'github-next-issue',
         'github-investigate-issue',
         'github-implement-issue',
+        'github-create-pull-request',
         'github-release-review',
     ];
 }

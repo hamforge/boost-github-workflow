@@ -1,6 +1,8 @@
 # Release Notes
 
-## [v1.0.1 (Unreleased)](https://github.com/hamforge/boost-github-workflow/compare/v1.0.0...main)
+## [Unreleased](https://github.com/hamforge/boost-github-workflow/compare/v1.0.1...HEAD)
+
+## [v1.0.1](https://github.com/hamforge/boost-github-workflow/compare/v1.0.0...v1.0.1) - 2026-08-03
 
 - Correct Laravel Boost installation and package-skill discovery guidance.
 - Remove unused Laravel runtime scaffolding and dependencies from the guidance-only package.

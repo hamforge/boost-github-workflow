@@ -1,6 +1,17 @@
 # Release Notes
 
-## [Unreleased](https://github.com/hamforge/boost-github-workflow/compare/v1.0.1...HEAD)
+## [Unreleased](https://github.com/hamforge/boost-github-workflow/compare/v1.1.0...HEAD)
+
+## [v1.1.0](https://github.com/hamforge/boost-github-workflow/compare/v1.0.1...v1.1.0) - 2026-08-13
+
+<!-- Release notes generated using configuration in .github/release.yml at main -->
+### What's Changed
+
+#### Enhancements
+
+* Add pull request creation skill by @joshbenham in https://github.com/hamforge/boost-github-workflow/pull/6
+
+**Full Changelog**: https://github.com/hamforge/boost-github-workflow/compare/v1.0.1...v1.1.0
 
 ## [v1.0.1](https://github.com/hamforge/boost-github-workflow/compare/v1.0.0...v1.0.1) - 2026-08-03
 
